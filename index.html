@@ -24,7 +24,7 @@
 
 <body>
 
-    <header class="container mx-auto my-6">
+    <header class="container mx-auto my-6 ">
         <nav class="">
             <div class="navbar bg-[#F85559] rounded-full flex">
                 <div class="">
@@ -65,16 +65,15 @@
                 <div class="form-control invisible lg:visible lg:flex-1 ">
                     <input type="text" placeholder="Search here"
                         class="input rounded-3xl ml-auto input-bordered w-28 md:w-auto " />
-
-
                 </div>
             </div>
         </nav>
         <section class="my-6">
-            <div class="carousel  w-full">
+            <!-- <div class="carousel h-[calc(100vh-124px)] w-full"> -->
+            <div class="carousel h-[calc(100vh-124px)] w-full">
+                <!-- slider 1 -->
                 <div id="slide1" class="carousel-item relative  w-full">
-                    <!-- <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" /> -->
-                    <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+                    <div class="hero min-h-full" style="background-image: url(./images/banner1.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-lg">
@@ -85,12 +84,13 @@
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+                        <a href="#slide4" class="btn text-white bg-black btn-circle">❮</a>
+                        <a href="#slide2" class="btn text-white bg-black btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
+                <!-- slider 2 -->
+                <div id="slide2" class="carousel-item relative   w-full">
+                    <div class="hero min-h-full" style="background-image: url(./images/banner2.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-lg">
@@ -101,12 +101,13 @@
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                        <a href="#slide1" class="btn text-white bg-black btn-circle">❮</a>
+                        <a href="#slide3" class="btn text-white bg-black btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
+                <!-- slider 3 -->
+                <div id="slide3" class="carousel-item relative   w-full">
+                    <div class="hero min-h-full" style="background-image: url(./images/banner3.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-lg">
@@ -117,12 +118,13 @@
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
+                        <a href="#slide2" class="btn text-white bg-black btn-circle">❮</a>
+                        <a href="#slide4" class="btn text-white bg-black btn-circle">❯</a>
                     </div>
                 </div>
-                <div id="slide4" class="carousel-item relative w-full">
-                    <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
+                <!-- slider 4 -->
+                <div id="slide4" class="carousel-item relative   w-full">
+                    <div class="hero min-h-full" style="background-image: url(./images/banner4.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-lg">
@@ -133,8 +135,8 @@
                         </div>
                     </div>
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
+                        <a href="#slide3" class="btn text-white bg-black btn-circle">❮</a>
+                        <a href="#slide1" class="btn text-white bg-black btn-circle">❯</a>
                     </div>
                 </div>
             </div>
@@ -166,31 +168,32 @@
     </header>
     <main class="container mx-auto">
         <!-- date -->
-        <section class="mt-32 items-center text-center">
-            <div class="flex flex-col sm:flex-row lg:flex-row  ">
-                <div class="w-2/4">
-                    <h2 class="7xl font-bold">Deal of the day</h2>
+        <section class="mt-32 items-center">
+            <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row  px-4 justify-between">
+                <div class=" lg:w-1/2   text-center lg:text-start">
+                    <h2 class="text-5xl font-extrabold mb-3">Deal of the day</h2>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
                         literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="flex  w-2/4 justify-center align-center gap-8 text-center">
-                    <div class=" ">
-                        <h2 class="7xl font-extrabold">29</h2>
+                <div class="flex  align-center gap-2 w-full lg:w-1/4 justify-center text-center">
+                    <div class="">
+                        <h2 class="text-5xl font-extrabold">29</h2>
                         <p>days</p>
                     </div>
                     <i class="fa-solid mt-5 fa-ellipsis-vertical"></i>
+
                     <div>
-                        <h2 class="7xl  font-extrabold">15</h2>
+                        <h2 class="text-5xl  font-extrabold">15</h2>
                         <p>Hours</p>
                     </div>
                     <i class="fa-solid mt-5 fa-ellipsis-vertical"></i>
                     <div>
-                        <h2 class="7xl font-extrabold">25</h2>
+                        <h2 class="text-5xl font-extrabold">25</h2>
                         <p>Minutes</p>
                     </div>
                     <i class="fa-solid mt-5 fa-ellipsis-vertical"></i>
                     <div>
-                        <h2 class="7xl font-extrabold">8</h2>
+                        <h2 class="text-5xl font-extrabold">08</h2>
                         <p>Seconds</p>
                     </div>
                 </div>
@@ -275,7 +278,7 @@
                             </div>
                         </div>
                         <div class="modal-action">
-                            <button class="btn">Close</button>
+                            <button class="btn">Shop Now</button>
                         </div>
                     </form>
                 </dialog>
@@ -360,7 +363,7 @@
                         </div>
                         <div class="modal-action">
                             <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn">Close</button>
+                            <button class="btn">Shop Now</button>
                         </div>
                     </form>
                 </dialog>
@@ -445,13 +448,12 @@
                         </div>
                         <div class="modal-action">
                             <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn">Close</button>
+                            <button class="btn">Shop Now</button>
                         </div>
                     </form>
                 </dialog>
 
                 <!-- card 4 -->
-
                 <button class="" onclick="my_modal_4.showModal()">
                     <div class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
@@ -528,13 +530,14 @@
                         </div>
                         <div class="modal-action">
                             <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn">Close</button>
+                            <button class="btn">Shop Now</button>
                         </div>
                     </form>
                 </dialog>
 
             </div>
-            <button class="bg-[#F85559] rounded-lg ml-24 lg:ml-[46%] mt-10  px-7 py-5  text-white">Show All</button>
+            <button class="bg-[#F85559] rounded-lg ml-24 md:ml-[43%] lg:ml-[46%] mt-10  px-7 py-5  text-white">Show
+                All</button>
         </section>
         <!-- team section -->
         <section>
@@ -608,16 +611,89 @@
                 </p>
             </div>
 
-            <div>
-                <div>
-                    <div>
-
+            <div class="flex flex-col lg:flex-row gap-4 mt-10">
+                <div class="flex  flex-col-reverse md:flex-row lg:flex-row">
+                    <div class="">
+                        <div class="flex text-start gap-6 my-5 items-center">
+                            <div class="bg-[]">
+                                <img src="./images/group 1.svg" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-extrabold">Dedicated Team</h2>
+                                <hr class=" h-1 w-1/4  my-4 bg-gray-100 border-0 rounded  dark:bg-gray-700">
+                                <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                    fruits.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex text-start gap-6 items-center">
+                            <div class="bg-[]">
+                                <img src="./images/love 1.svg" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-extrabold">Fresh is Best</h2>
+                                <hr class="w-1/4 h-1   my-4 bg-gray-100 border-0 rounded  dark:bg-gray-700">
+                                <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                    fruits.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex text-start gap-6 items-center mt-3">
+                            <div class="bg-[]">
+                                <img src="./images/gift-box 1.svg" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-extrabold">Gift Certificates</h2>
+                                <hr class="w-1/4 h-1   my-4 bg-gray-100 border-0 rounded  dark:bg-gray-700">
+                                <p>Professional employees are there for you to pick <br> the most amazing and fresh
+                                    fruits.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
 
+                    <div>
+                        <img src="./images/whychoose1.png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex text-end gap-6 items-center mt-3">
+                        <div>
+                            <h2 class="text-2xl font-extrabold">Integrated Supplier</h2>
+                            <hr class="w-1/4 h-1 ml-auto  my-4 bg-gray-100 border-0 rounded  dark:bg-gray-700">
+                            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <div class="bg-[]">
+                            <img src="./images/fruit 1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex text-end gap-6 items-center mt-3">
+                        <div>
+                            <h2 class="text-2xl font-extrabold">Sustainable Practice</h2>
+                            <hr class="w-1/4 h-1 ml-auto  my-4 bg-gray-100 border-0 rounded  dark:bg-gray-700">
+                            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <div class="bg-[]">
+                            <img src="./images/ice-cream 1.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flex text-end gap-6 items-center mt-3">
+                        <div>
+                            <h2 class="text-2xl font-extrabold">The Benefits Only</h2>
+                            <hr class="w-1/4 h-1 ml-auto  my-4 bg-gray-100 border-0 rounded  dark:bg-gray-700">
+                            <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <div class="bg-[]">
+                            <img src="./images/like 1.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
     <footer class="footer footer-center p-10 bg-[#121212] text-white mt-16 text-base-content rounded">
